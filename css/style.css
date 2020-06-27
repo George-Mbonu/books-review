@@ -1,0 +1,222 @@
+/* 
+    Document   : style
+    Created on : Jan 6, 2016, 7:33:30 AM
+    Author     : Victor
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+root { 
+    display: block;
+}
+
+
+.btn_pr,.btn_dn,.btn_in,.btn_su,.btn_wa,.btn_re,.btn_fu,.btn_dp,.btn_ins
+{
+    padding-right:5px;
+    padding-left:5px;
+    padding-bottom: 1px;
+    color:#111;
+    line-height:  1.8em;
+    padding-top: 1px;
+    font-family: Aerial;
+background-color: white;
+text-decoration: none;
+    border: 3px solid white;
+    border-radius: 4px 4px 0 0;
+    font-size:20px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius:10px;
+    width:300px;
+    height:100px;
+}
+
+.btn_pr{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}  
+.btn_pr:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn_dn{
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}  
+.btn_dn:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+.btn_su{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+} 
+.btn_su:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.btn_in{ 
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+} 
+
+.btn_in:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+
+.btn_wa{
+ color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn_wa:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.btn_re{
+ color: #fff;
+  background-color: #B6B6B6;
+  border-color: #B6B6B6;
+}
+.btn_re:hover {
+  color: #fff;
+  background-color: #A9A9A9;
+  border-color: #A9A9A9;
+}
+
+.btn_fu{
+ color: #fff;
+  background-color: #269C9C;
+  border-color: #269C9C;
+}
+.btn_fu:hover {
+  color: #fff;
+  background-color: #008B8B;
+  border-color: #008B8B;
+}
+.btn_dp{
+ color: #fff;
+  background-color:  #ECA68E;
+  border-color:  #ECA68E;
+}
+.btn_dp:hover {
+  color: #fff;
+  background-color: #E9967A;
+  border-color: #E9967A;
+}
+.btn_ins{
+ color: #fff;
+  background-color: #9C269C;
+  border-color: #9C269C;
+}
+.btn_ins:hover {
+  color: #fff;
+  background-color: #8B008B;
+  border-color: #8B008B;
+}
+
+a,a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+          
+            #accommodation{
+                background-color: #337ab7;
+                border-color: #2e6da4;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+           #handmade{
+                background-color: #5cb85c;
+                border-color: #4cae4c;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+           #live_it{
+                background-color: #d9534f;
+                border-color: #d43f3a;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+             #giftedhands{
+                background-color: #5bc0de;
+                border-color: #46b8da;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+            #portfolio{
+                background-color: #f0ad4e;
+                border-color: #eea236;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+            #swapitem{
+                background-color: #B6B6B6;
+                border-color: #B6B6B6;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+            #places{
+               background-color: #269C9C;
+                border-color: #269C9C;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+             #saed{
+                background-color: #9C269C;
+                border-color: #9C269C;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+             #blog{
+                 background-color:  #ECA68E;
+                 border-color:  #ECA68E;
+                box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+            }
+            #blog,#saed,#places,#swapitem,#accommodation,#handmade,#live_it,#giftedhands,#portfolio:hover{
+                cursor:pointer;
+               
+            }
+             #blog,#saed,#places,#swapitem,#accommodation,#handmade,#live_it,#giftedhands,#portfolio{
+                margin:5px;
+                height: 350px;
+            }
+            .myclick{
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+            #foot{
+              height:auto;
+              margin-top:10%;
+              background-color: #000;
+              font-family: Aerial;
+              font-size: 20px;
+              border-color: #269C9C;
+              box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);  
+            }
+            .foot-head{
+              height:350px;
+              background-color: #009988;
+              border-color: #008B8B;
+              box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);  
+              
+            }
+             .foot-base{
+             height:auto;
+             margin-top:5%;
+             background-color: #222;
+              border-color: #008B8B;
+              box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2); 
+             }
+
+ 

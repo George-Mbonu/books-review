@@ -1,0 +1,17 @@
+flask
+flask_login
+
+flask_bootstrap
+
+flask-WTF
+flask-SQLalchemy
+
+email_validator
+
+psycopg2
+
+flask_session
+
+flask_mail
+validate_email
+py3DNS

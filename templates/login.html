@@ -1,0 +1,61 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Log In</title>
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js/bootstrap.js') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-transparent navbar-fixed-top">
+          <div class="container">  
+                    <div align="center">
+                      <ul class="nav navbar-nav navbar-center">
+                        <li class="active"><a href="Home"><i class="glyphicon glyphicon-home"></i> </a></li>
+                        <li><a><i class="glyphicon glyphicon-map-marker"></i> </a>
+                          <ul>
+                              <li class="text-center"><a>Find Us</a></li>
+                          </ul>
+                        </li>
+                        <li><a><i class="glyphicon glyphicon-phone"></i> </a>
+                            <ul>
+                              <li class="text-center"><a>Reach Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a><i class="glyphicon glyphicon-user"></i> </a>
+                            <ul>
+                              <li class="text-center"><a href="login" >Log-In</a></li>
+                              <li class="text-center"><a href="signup" target=_"blank">Register</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+
+            <div class="loginbox">
+              <form method="POST" action="/login">
+                <img src="{{ url_for('static', filename='img/pers.jpg') }}" class="avatar">
+                <h1>Login Here</h1>
+                {{ form.hidden_tag() }}
+                {{ wtf.form_field(form.username) }}
+                {{ wtf.form_field(form.password) }}
+                {{ wtf.form_field(form.remember) }}
+                <input type="submit" name="" value="login">
+                <a href="{{ url_for('request_password_reset') }}"> Forgot Password? </a><br>
+                <a href="signup" target=_"blank"> Don't Have An Account? </a><br>
+              </form>
+            </div>
+
+      </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,81 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js/bootstrap.js') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}"> 
+
+        <title>User Signup!</title>
+        
+    </head>  
+
+    <body>
+
+    <nav class="navbar navbar-transparent navbar-fixed-top">
+      <div class="container">  
+                <div align="center">
+                    <ul class="nav navbar-nav navbar-center">
+		                <li class="active"><a href="Home"><i class="glyphicon glyphicon-home"></i> </a></li>
+		                <li><a><i class="glyphicon glyphicon-map-marker"></i> </a>
+			                <ul>
+		                    	<li class="text-center"><a>Find Us</a></li>
+		                    </ul>
+                        </li>
+                        <li><a><i class="glyphicon glyphicon-phone"></i> </a>
+                            <ul>
+                              <li class="text-center"><a>Reach Us</a></li>
+                            </ul>
+                      	</li>
+                        <li><a><i class="glyphicon glyphicon-user"></i> </a>
+                            <ul>
+                              <li class="text-center"><a href="login" target=_"blank">Log-In</a></li>
+                              <li class="text-center"><a href="signup">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="text-left">Notice!</h1>
+                    <p class="text-left">By Registeristering, you agree to join other readers in our medium scale online library provided by our friends over at Goodreads API.</p>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="text-left">Register Here</h3>
+                        </div>
+
+                        <div class="col-md-6">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </div>
+
+                        <a href="login" target=_"blank"> <span class="glyphicon glyphicon-user"></span> Already Have An Account? </a><br>
+                    </div>
+
+                    <hr>
+
+                <form method="POST" action="/signup">
+                    {{ form.hidden_tag() }}
+                    {{ wtf.form_field(form.first_name) }}
+                    {{ wtf.form_field(form.last_name) }}
+                    {{ wtf.form_field(form.username) }}
+                    {{ wtf.form_field(form.email) }}
+                    {{ wtf.form_field(form.password) }}
+                    {{ wtf.form_field(form.confirm_password) }}
+                    {{ wtf.form_field(form.accept) }}
+
+                    <input type="submit" class="btn btn-info" name="" value="Register">
+                    <input type="reset" class="btn btn-danger" name="" value="Reset">                    
+
+                </form>
+            </div>
+    </body>
+</html>
